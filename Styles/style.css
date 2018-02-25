@@ -337,31 +337,31 @@ img { display: inline-block; margin: 0; padding: 0; border: 0; }
 
 .content .detail_1 .fundType li .circle p b { font-size: 20px; }
 
-.content .detail_1 .fundType li.type_1 { opacity: 0; left: 221px; margin-left: 0; background-image: url(../images/bg-circle-green.png); z-index: 0; }
+.content .detail_1 .fundType li.type_1 { opacity: 0; left: 221px; margin-left: 0; background-image: url(../Images/bg-circle-green.png); z-index: 0; }
 
 .content .detail_1 .fundType li.type_1 > span { background-color: #47BBAA; }
 
-.content .detail_1 .fundType li.type_1 .circle { background-image: url(../images/bg-circle-green-hover.png); }
+.content .detail_1 .fundType li.type_1 .circle { background-image: url(../Images/bg-circle-green-hover.png); }
 
 .content .detail_1 .fundType li.type_1 .circle p { margin: 10px auto; }
 
 .content .detail_1 .fundType li.type_1 .circle p:first-child { margin-top: 15px; }
 
-.content .detail_1 .fundType li.type_2 { left: 221px; background-image: url(../images/bg-circle-blue.png); z-index: 2; }
+.content .detail_1 .fundType li.type_2 { left: 221px; background-image: url(../Images/bg-circle-blue.png); z-index: 2; }
 
 .content .detail_1 .fundType li.type_2 > span { background-color: #7495CA; }
 
-.content .detail_1 .fundType li.type_2 .circle { background-image: url(../images/bg-circle-blue-hover.png); }
+.content .detail_1 .fundType li.type_2 .circle { background-image: url(../Images/bg-circle-blue-hover.png); }
 
 .content .detail_1 .fundType li.type_2 .circle p { margin: 0 auto; }
 
 .content .detail_1 .fundType li.type_2 .circle p:first-child { margin-top: 56px; }
 
-.content .detail_1 .fundType li.type_3 { opacity: 0; right: 221px; background-image: url(../images/bg-circle-lightGreen.png); z-index: 0; }
+.content .detail_1 .fundType li.type_3 { opacity: 0; right: 221px; background-image: url(../Images/bg-circle-lightGreen.png); z-index: 0; }
 
 .content .detail_1 .fundType li.type_3 > span { background-color: #C9DC58; }
 
-.content .detail_1 .fundType li.type_3 .circle { background-image: url(../images/bg-circle-lightGreen-hover.png); }
+.content .detail_1 .fundType li.type_3 .circle { background-image: url(../Images/bg-circle-lightGreen-hover.png); }
 
 .content .detail_1 .fundType li.type_3 .circle p { margin: 0 auto; }
 
