@@ -1,0 +1,888 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-TW">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!--搜尋SEO-->
+	<meta name="description" content="跨越資產與國界的新收益方案(風險聲明詳網站)"/>
+	<meta name="keywords" content="聯博,聯博投信,多元資產,聯博多元資產基金,聯博多元資產收益組合基金,聯博多元資產投資策略"/>
+	<meta property="og:title" content="聯博多元資產投資策略" />
+
+	<!--網頁標題-->
+	<title>聯博多元資產投資策略</title>
+
+	<!--JS library-->
+	<script src="Scripts/jquery.min.js"></script>
+	<script src="Scripts/velocity.min.js"></script>
+	<script src="Scripts/jquery.mousewheel.js"></script>
+	<script src="Scripts/jquery.jscrollpane.min.js"></script>
+	<script src="Scripts/jquery-ui.min.js"></script>
+	<script>
+		(function(a){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))})(navigator.userAgent||navigator.vendor||window.opera);
+
+		if (jQuery.browser.mobile) {
+			var link = window.location.href;
+			var qu = window.location.search;
+			var hash = window.location.hash;
+
+			if (link.indexOf("index.html") < 0) {
+				if (qu && hash) {
+					link = link.replace(qu, "").replace(hash, "") + "mobile/" + qu + hash;
+				} else {
+					if (qu) {
+						link = link.replace(qu, "") + "mobile/" + qu;
+					} else if (hash) {
+						link = link.replace(hash, "") + "mobile/" + hash;
+					} else {
+						if (link.indexOf("#") > 0 ) {
+							link = link.replace("#", "") + "mobile/";
+						} else if (link.indexOf("?") > 0 ) {
+							link = link.replace("?", "") + "mobile/";
+						} else {
+							link = link + "mobile/";
+						}
+					}
+				}
+			} else {
+				link = link.replace("index.html", "mobile/index.html");
+			}
+			window.location.href = link;
+		}
+	</script>
+
+	<!--CSS-->
+	<link rel="stylesheet" href="Styles/reset.css" />
+	<link rel="stylesheet" href="Styles/style.css" />
+	<link rel="stylesheet" href="Styles/jquery.jscrollpane.css" />
+</head>
+<body>
+	<!--網頁範圍-->
+	<div id="loading">
+		<div class="icon">
+			<div class="icon-mask"></div>
+		</div>
+	</div>
+	<div id="container">
+
+		<!--頁首-->
+		<div id="header">
+			<a target="_blank" href="https://www.abfunds.com.tw/" id="logo"></a>
+		</div><!--End of 頁首-->
+
+		<!--內容-->
+		<div id="content">
+
+			<!--左邊區塊-->
+			<div class="column column-left">
+				<div class="section section-top">
+					<div class="display-index hoverFrame hoverFrame_1">
+						<div nav="1" class="btn btn_1">
+							<div class="title">
+								<span class="icon"><i iconanimate="1"></i></span>
+								<p>資產類別多元</p>
+							</div>
+							<div class="btnHover">
+								<span class="icon"></span>
+								<p>超過40年的大數據</p>
+							</div>
+						</div>
+					</div>
+					<div class="mainTitle title_1">
+						<div>
+							<span class="icon"></span>
+							<h1>資產類別多元</h1>
+							<h3>超過40年的大數據</h3>
+						</div>
+					</div>
+					<div class="mainTitle title_2">
+						<div>
+							<span class="icon"></span>
+							<h1>收益來源多元</h1>
+							<h3>各種收益機會一次網羅</h3>
+						</div>
+					</div>
+					<div class="mainTitle title_3">
+						<div>
+							<span class="icon"></span>
+							<h1>研究觀點多元</h1>
+							<h3>集合股債團隊強大後援</h3>
+						</div>
+					</div>
+					<div class="mainTitle title_4">
+						<div>
+							<span class="icon"></span>
+							<h1>產品選擇多元</h1>
+							<h3>提供各種投資需求不同選擇</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="section section-middle">
+					<div class="display-index up"></div>
+					<div class="question down">
+						<div class="qhoverFrame q1">
+							<div class="move">
+								<div class="quest">
+									<h3>Q:</h3>
+									<p>一檔多元組合型基金可以涵蓋多少標的？</p>
+								</div>
+								<div class="ans">
+									<p>以<b>聯博多元資產收益組合基金<span>(本基金得投資於非投資等級之高風險債券基金且配息來源可能為本金)</span></b>為例，其子基金目前持有股債總數約達3000檔*，透過高度分散策略降低個別持股投資風險。</p>
+									<span class="note">*投資組合得隨時間有所變動。<br />資料來源：聯博，截至2015年6月30日</span>
+								</div>
+							</div>
+						</div>
+						<div class="qhoverFrame q2">
+							<div class="move">
+								<div class="quest">
+									<h3>Q:</h3>
+									<p>如何才能追求長期的投資收益？</p>
+								</div>
+								<div class="ans">
+									<p>聯博研究顯示，實現長期投資收益的關鍵，除了掌握投資收益具有吸引力、成長潛力的資產，還需搭配動態的風險管理策略。</p>
+								</div>
+							</div>
+						</div>
+						<div class="qhoverFrame q3">
+							<div class="move">
+								<div class="quest">
+									<h3>Q:</h3>
+									<p>多元資產配置適合哪些投資人？</p>
+								</div>
+								<div class="ans">
+									<p>除了需要做好資產配置、渴望尋求收益的投資人以外，事實上，聯博集團運用多元資產投資策略在退休金管理上有多年經驗，在英、美、日各國都獲得肯定，因此也適合正在規劃退休，或是已經退休的族群作為投資標的選擇之一。</p>
+								</div>
+							</div>
+						</div>
+						<div class="qhoverFrame q4">
+							<div class="move">
+								<div class="quest">
+									<p>幣別多元：多種計價幣別彈性運用資金</p>
+								</div>
+								<div class="ans">
+									<p>聯博多元資產系列基金提供新台幣、美元、歐元、人民幣、加拿大幣、澳幣及南非幣，以多種幣別滿足投資人不同需求。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section section-bottom">
+					<div class="display-index up"></div>
+					<div class="linkIndex down">
+						<div class="title">
+							<span class="icon"><i></i></span>
+							<p>首頁</p>
+						</div>
+					</div>
+				</div>
+
+			</div><!--End of 左邊區塊-->
+
+			<!--中間區塊-->
+			<div class="column column-middle">
+				<div class="display-index content-index up">
+					<div class="top">
+						<div class="pic"></div>
+						<div class="hoverFrame hoverFrame-s">
+							<div nav="2" class="btn btn-s_2">
+								<div class="title">
+									<span class="icon"><i iconanimate="2"></i></span>
+									<p>收益來源多元</p>
+								</div>
+								<div class="btnHover">
+									<span class="icon"></span>
+									<p>各種收益機會一次網羅</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="middle">
+						<div class="center">
+							<h3>跨越資產與國界的新收益方案</h3>
+							<h1><span class="brackets"></span>聯博<span class="text-purple">多元</span>資產投資策略<span class="brackets"></span></h1>
+							<p>多元資產投資策略之所以稱做「多元」，是因其投資範圍包含不只是股票、債券等傳統單一資產，而涵蓋了更多不同的資產類別與投資標的。期望在各種市場環境下，以多元的資產投資，創造出廣泛的收益來源。</p>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="pic"></div>
+					</div>
+				</div>
+
+				<!--內容區塊一-->
+				<div class="content content_1">
+					<div class="scroll">
+						<div class="detail detail_1">
+							<div class="scrollShow">
+								<p>聯博集團投資管理團隊擁有超過40年的多元資產投資經驗，連續不間斷地追蹤全球各類資產走勢、評價與報酬表現，從中分析出當下較具投資吸引力的資產類別。藉由系統性分析瞭解目前各資產與區域的風險與報酬機會，其中包含成熟與新興市場區域與單一國家的股票、債券、貨幣，以及另類資產、商品……等。</p>
+							</div>
+
+							<div class="scrollShow" hasAnimation="1_1">
+								<h1>投資涵蓋範圍</h1>
+								<h3>資產類別不設限</h3>
+								<ul class="fundType">
+									<li class="type_1">
+										<p>成長型</p>
+										<span>+</span>
+										<div class="circle">
+											<p><b>股票</b><br />大型股、中小型股</p>
+											<p><b>債券</b><br />投資等級債、高收益債、新興市場債</p>
+										</div>
+									</li>
+									<li class="type_2">
+										<p>通膨敏感型</p>
+										<span>+</span>
+										<div class="circle">
+											<p>通膨連結產品</p>
+											<p>房地產</p>
+											<p>大宗商品</p>
+										</div>
+									</li>
+									<li class="type_3">
+										<p>防禦型</p>
+										<span>+</span>
+										<div class="circle">
+											<p>主權債</p>
+											<p>貨幣</p>
+											<p>選擇權策略</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<div class="scrollShow" hasAnimation="1_2">
+								<h3>布局領域零界線</h3>
+								<div class="map">
+									<span class="pin green"></span>
+									<span class="pin green"></span>
+									<span class="pin blue"></span>
+									<span class="pin green"></span>
+									<span class="pin green"></span>
+									<span class="pin green"></span>
+									<span class="pin blue"></span>
+									<span class="pin blue"></span>
+									<span class="pin green"></span>
+									<span class="pin blue"></span>
+									<span class="pin blue"></span>
+								</div>
+							</div>
+
+							<div class="scrollShow" hasAnimation="1_3">
+								<div class="mapDetail">
+									<ul>
+										<li>
+											<h1>成熟國家<span><i class="num">0</i>+</span></h1>
+											<p>美國、歐洲不含英國、英國、日本、亞洲不含日本、加拿大<br /></p>
+										</li>
+										<li>
+											<h1>新興國家<span><i class="num">0</i>+</span></h1>
+											<p>亞洲、歐非中東、拉丁美洲</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="scrollShow">
+								<h1>研究各種影響市場因素</h1>
+								<ul class="marketFactors">
+									<li>投資評價和品質</li>
+									<li>通膨水準</li>
+									<li>市場情緒</li>
+									<li>成長因素</li>
+									<li>政策刺激</li>
+									<li>信用風險</li>
+									<li>風險指標</li>
+								</ul>
+							</div>
+
+
+							<div class="scrollShow" hasAnimation="1_4">
+								<h1>三大投資流程</h1>
+								<div class="process">
+									<div class="process-content">
+										<div class="process-frame">
+											<div class="pcontent pcontent_1">
+												<div class="pic"><img src="Images/pic-content_1-detail_1.png" height="300" width="344" alt="" /></div>
+												<div class="pdetail">
+													<h3><img src="Images/icon-detail-process-title_1.png" height="40" width="30" alt="1" />研究分析</h3>
+													<ul>
+														<li>運用聯博獨特的風險/報酬預測工具</li>
+														<li>聯博全球經濟研究團隊進行由上而下的總體經濟研究分析</li>
+														<li>聯博股票、債券團隊透過由下而上的研究分析，精選投資標的</li>
+														<li>針對特定主題進行深度研究</li>
+													</ul>
+												</div>
+												<span class="btn-next"></span>
+											</div>
+											<div class="pcontent pcontent_2">
+												<div class="pic"><img src="Images/pic-content_1-detail_2.png" height="300" width="344" alt="" /></div>
+												<div class="pdetail">
+													<h3><img src="Images/icon-detail-process-title_2.png" height="40" width="30" alt="1" />投資組合策略</h3>
+													<ul>
+														<li>權衡風險/報酬/收益/成長潛力</li>
+														<li>決定各類資產曝險比例</li>
+														<li>研擬投資組合執行策略</li>
+													</ul>
+												</div>
+												<span class="btn-next"></span>
+												<span class="btn-prev"></span>
+											</div>
+											<div class="pcontent pcontent_3">
+												<div class="pic"><img src="Images/pic-content_1-detail_3.png" height="300" width="344" alt="" /></div>
+												<div class="pdetail">
+													<h3><img src="Images/icon-detail-process-title_3.png" height="40" width="30" alt="1" />執行投資組合配置</h3>
+													<ul>
+														<li>每日審視風險</li>
+														<li>每日檢視是否有調整必要</li>
+														<li>選擇投資工具</li>
+														<li>審視投資方針</li>
+														<li>交易執行</li>
+													</ul>
+												</div>
+												<span class="btn-prev"></span>
+											</div>
+										</div>
+									</div>
+									<div class="process-switch">
+										<ul>
+											<li class="nowPage"></li>
+											<li></li>
+											<li></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="scrollShow" hasAnimation="1_5">
+								<h1>聯博多元資產投資方案<br />運用全球佈局，以度過各種市場環境 </h1>
+								<div class="equation">
+									<div class="element element_1">
+										<span class="pic"></span>
+										<p>採取思考慎密且不<br />受限制的投資方式</p>
+									</div>
+									<div class="plus"></div>
+									<div class="element element_2">
+										<span class="pic"></span>
+										<p>整合投資組合</p>
+									</div>
+									<div class="plus"></div>
+									<div class="element element_3">
+										<span class="pic"></span>
+										<p>動態管理</p>
+									</div>
+									<div class="equal"></div>
+									<div class="element element_4">
+										<span class="pic">
+											<i></i>
+										</span>
+										<p>以多元化回報實現<br />期望結果</p>
+									</div>
+								</div>
+							</div>
+
+							<span class="goTop"></span>
+						</div>
+					</div>
+				</div><!--End of 內容區塊一-->
+
+				<!--內容區塊二-->
+				<div class="content content_2">
+					<div class="scroll">
+						<div class="detail detail_2">
+							<div class="scrollShow">
+								<p>聯博的多元資產策略將傳統收益來源範圍再擴大，不僅是債券孳息、股息收入，還包含特別股、REITs、房貸證券，甚至是選擇權權利金的收益，再加上個別資產的潛在資本利得，讓投資人一次掌握收益和成長的投資機會。</p>
+							</div>
+
+							<div class="scrollShow">
+								<h1>收益來源有別於傳統，收益可來自四面八方</h1>
+								<div class="everyway">
+									<div class="title">
+										<p>成長股、中小型股、高息股、<br />不動產投資信託等</p>
+										<p>政府公債、投資等級公司債、<br />高收益債、房貸收益等</p>
+										<p>ETF、衍生性金融商品<br />(如選擇權與期貨)等</p>
+									</div>
+									<ul class="puzzle">
+										<li class="green">股票</li>
+										<li class="blue">債券</li>
+										<li class="lightGreen">其他</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="scrollShow">
+								<h1>控制風險才是追求收益的最佳策略</h1>
+								<div class="strategy">
+									<h4>聯博集團獨創DAA動態資產配置策略</h4>
+									<p>在各種市場環境下監控每個投資組合，適時彈性調整股債比例，為投資人在追求收益與管理波動風險之間取得平衡。</p>
+								</div>
+							</div>
+
+							<div class="scrollShow" hasAnimation="2_1">
+								<div class="daa">
+									<div class="center">
+										<div class="spinPic"></div>
+										<div class="text">
+											<p>多元資產<br />因時制宜</p>
+										</div>
+									</div>
+									<ul>
+										<li class="text_1">
+											<div class="pic">
+												<i></i>
+											</div>
+											<div class="text">
+												<h4>景氣擴張/利率上升</h4>
+												<p>股多債少</p>
+											</div>
+										</li>
+										<li class="text_2">
+											<div class="pic">
+												<i></i>
+											</div>
+											<div class="text">
+												<h4>景氣復甦/低利環境</h4>
+												<p>股債均衡</p>
+											</div>
+										</li>
+										<li class="text_3">
+											<div class="pic">
+												<i></i>
+											</div>
+											<div class="text">
+												<h4>景氣衰退/利率下滑</h4>
+												<p>股少債多</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="scrollShow">
+								<div class="more">了解更多DAA策略</div>
+							</div>
+
+							<div class="hide">
+								<div class="scrollShow">
+									<h1>DAA動態資產配置策略</h1>
+									<p>透過風險指標、市場情緒、信用狀況、利率水準與投資評價等五大指標，結合基本面及量化研究來判讀市場訊號、深入檢視模型結果並進行資產配置壓力測試，進而提前察覺風險所在、及早調整投資組合。</p>
+								</div>
+
+								<div class="scrollShow">
+									<div class="note">
+										<span class="brackets"></span>
+										<p>DAA目標並非預測市場震盪發生時機，<br />而是在市場風險開始出現轉變時提出預警</p>
+										<span class="brackets"></span>
+									</div>
+								</div>
+
+								<div class="scrollShow">
+									<h1>DAA幫助投資組合度過各市場風暴</h1>
+									<div class="history">
+										<div class="description">
+											<div class="time">
+												<div class="historyTime">
+													<p class="date">2010.05</p>
+													<p>希臘債務危機</p>
+												</div>
+												<div class="historyTime">
+													<p class="date">2011.03</p>
+													<p>日本311大地震</p>
+												</div>
+												<div class="historyTime">
+													<p class="date">2011.07</p>
+													<p>歐債危機爆發，造成全球股市重挫</p>
+												</div>
+												<div class="historyTime">
+													<p class="date">2013.06</p>
+													<p>美國聯準會釋出可能提前退場訊息，引發股債市場震盪</p>
+												</div>
+												<div class="historyTime">
+													<p class="date">2014.10</p>
+													<p>對經濟復甦疑慮增加，全球金融市場波動劇增</p>
+												</div>
+												<div class="historyTime">
+													<p class="date">2015.08</p>
+													<p>市場擔憂中國經濟引發全球資產價格大幅走跌</p>
+												</div>
+												<span class="arrow"></span>
+											</div>
+											<div class="text">
+												<div class="historyText">
+													<h4>DAA策略的因應對策</h4>
+													<p>聯博投資團隊經由DAA預先偵測到歐股與全球股市波動度同步增加，因而建議減碼全球股票部位。</p>
+												</div>
+												<div class="historyText">
+													<h4>DAA策略的因應對策</h4>
+													<p>在災難接連發生之後，根據DAA監測，日股投資風險大增，但全球股市投資風險僅微幅增加，因此建議維持全球股票配置。</p>
+												</div>
+												<div class="historyText">
+													<h4>DAA策略的因應對策</h4>
+													<p>聯博投資團隊在股市波動度仍低於長期平均時透過DAA發現歐元區信用利差已悄然上升、危機蔓延一觸即發，因此在全球股市重挫前，提前減碼股票部位，減緩投資組合受衝擊的程度。</p>
+												</div>
+												<div class="historyText">
+													<h4>DAA策略的因應對策</h4>
+													<p>微幅調整固定收益部位以降低風險；持續看好股市前景。</p>
+												</div>
+												<div class="historyText">
+													<h4>DAA策略的因應對策</h4>
+													<p>市場賣壓僅是短期現象，尚無須調整投資組合。</p>
+												</div>
+												<div class="historyText">
+													<h4>DAA策略的因應對策</h4>
+													<p>聯博投資團隊自2015年6月已開始減少股票加碼部位，逐漸將投資部位降到中立的水準。</p>
+												</div>
+											</div>
+										</div>
+										<div class="dateDrag">
+											<div class="slider"></div>
+											<div class="year">
+												<span class="green">2010</span>
+												<span class="yellow">2011</span>
+												<span class="blue">2011</span>
+												<span class="purple">2013</span>
+												<span class="gray">2014</span>
+												<span class="lightBlue">2015</span>
+											</div>
+										</div>
+										<p class="info">資料來源：聯博</p>
+									</div>
+								</div>
+							</div>
+
+							<span class="goTop"></span>
+						</div>
+					</div>
+				</div><!--End of 內容區塊二-->
+
+				<!--內容區塊三-->
+				<div class="content content_3">
+					<div class="scroll">
+						<div class="detail detail_3">
+
+							<div class="scrollShow">
+								<p>聯博集團投資團隊優勢：研究涵蓋15,000家以上固定收益發行機構、全球66間交易所掛牌之5470家企業，與全球20多國的8種房地產類別(截至2015年3月31日)。</p>
+							</div>
+
+							<div class="scrollShow">
+								<h1>聯博集團多元資產團隊優勢</h1>
+								<div class="advantage">
+									<p>集團中有27位多元資產投資專家，成員平均業界經驗達21年，總管理資產1,170億美元*。</p>
+									<span>*資料來源：聯博，截至2015年9月30日</span>
+								</div>
+							</div>
+
+							<div class="scrollShow"  hasAnimation="3_1">
+								<div class="plus">+</div>
+								<h1 style="margin-top: 10px;">結合聯博集團全球資源</h1>
+								<div class="resource">
+									<ul>
+										<li>
+											<p numLimit="21" class="num">0</p>
+											<p class="text">國家</p>
+										</li>
+										<li>
+											<p numLimit="46" class="num">0</p>
+											<p class="text">城市</p>
+										</li>
+										<li>
+											<p numLimit="204" class="num">0</p>
+											<p class="text">研究分析師</p>
+										</li>
+										<li>
+											<p numLimit="151" class="num">0</p>
+											<p class="text">投資組合經理人</p>
+										</li>
+									</ul>
+									<p>聯博投資管理據點遍及全球，不分地區與時區，同步分享全球多元觀點與投資經驗，整合出符合客戶需求的投資方案。</p>
+									<span>資料來源：聯博，截至2015年9月30日</span>
+								</div>
+							</div>
+
+							<div class="scrollShow">
+								<div class="downArrow"></div>
+								<div class="equation">
+									<div class="element element_1">
+										<h4>全面追求<br />收益機會</h4>
+										<p>歐亞債券、全球高收益債券同步掌握</p>
+										<p>多元佈局、高度分散</p>
+										<div class="hover">
+											<h3>聯博<br />債券團隊</h3>
+										</div>
+									</div>
+									<div class="plus"></div>
+									<div class="element element_2">
+										<h4>精選<br />潛力股票</h4>
+										<p>偏好成長型企業</p>
+										<p>偏好高獲利、高品質、成長性可延續之企業</p>
+										<div class="hover">
+											<h3>聯博<br />股票團隊</h3>
+										</div>
+									</div>
+									<div class="plus"></div>
+									<div class="element element_3">
+										<h4>管理<br />投資風險</h4>
+										<p>動態調整股債比例</p>
+										<p>運用衍生性金融商品，及時調整投資風險值</p>
+										<div class="hover">
+											<h3>聯博<br />多元資產團隊</h3>
+										</div>
+									</div>
+									<div class="equal"></div>
+									<div class="element element_4">
+										<h3>收益資產<br />成長資產<br />優化機制資產</h3>
+										<div class="hover">
+											<h3>多元收益<br />投資方案</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="scrollShow" hasAnimation="3_2">
+								<h1>聯博多元資產管理團隊所管理資產持續成長</h1>
+								<div class="chartSection">
+									<div class="chart">
+										<div class="barItem">
+											<span class="date">2014.06</span>
+											<span data="32" class="bar green"></span>
+										</div>
+										<div class="barItem">
+											<span class="date">2014.12</span>
+											<span data="32" class="bar lightGreen"></span>
+										</div>
+										<div class="barItem">
+											<span class="date">2015.03</span>
+											<span data="38" class="bar green"></span>
+										</div>
+										<div class="barItem">
+											<span class="date">2015.06</span>
+											<span data="72" class="bar lightGreen"></span>
+										</div>
+										<div class="timeLine">
+											<span>1000</span>
+											<span>1050</span>
+											<span>1100</span>
+											<span>1150</span>
+											<span>1200</span>
+											<span>1250</span>
+											<span>1300</span>
+										</div>
+									</div>
+									<p class="resource"><span>億美元</span>資料來源：聯博，2015年6月30日</p>
+								</div>
+							</div>
+
+							<div class="scrollShow" hasAnimation="3_3">
+								<h1>21國投資管理據點</h1>
+								<div class="map">
+									<div class="dot us">
+										<span class="country">美國</span>
+									</div>
+									<div class="dot ca">
+										<span class="country">加拿大</span>
+									</div>
+									<div class="dot mx">
+										<span class="country">墨西哥</span>
+									</div>
+									<div class="dot br">
+										<span class="country">巴西</span>
+									</div>
+									<div class="dot as">
+										<span class="country">阿根廷</span>
+									</div>
+									<div class="dot uk">
+										<span class="country">英國</span>
+									</div>
+									<div class="dot fr">
+										<span class="country">法國</span>
+									</div>
+									<div class="dot de">
+										<span class="country">德國</span>
+									</div>
+									<div class="dot lu">
+										<span class="country">盧森堡</span>
+									</div>
+									<div class="dot se">
+										<span class="country">瑞典</span>
+									</div>
+									<div class="dot ch">
+										<span class="country">瑞士</span>
+									</div>
+									<div class="dot bh">
+										<span class="country">巴林</span>
+									</div>
+									<div class="dot it">
+										<span class="country">義大利</span>
+									</div>
+									<div class="dot hl">
+										<span class="country">荷蘭</span>
+									</div>
+									<div class="dot dk">
+										<span class="country">丹麥</span>
+									</div>
+									<div class="dot au">
+										<span class="country">澳洲</span>
+									</div>
+									<div class="dot jp">
+										<span class="country">日本</span>
+									</div>
+									<div class="dot hk">
+										<span class="country">香港</span>
+									</div>
+									<div class="dot kr">
+										<span class="country">韓國</span>
+									</div>
+									<div class="dot tw">
+										<span class="country">台灣</span>
+									</div>
+									<div class="dot sg">
+										<span class="country">新加坡</span>
+									</div>
+								</div>
+							</div>
+
+							<span class="goTop"></span>
+						</div>
+					</div>
+				</div><!--End of 內容區塊三-->
+
+				<!--內容區塊四-->
+				<div class="content content_4">
+					<div class="scroll">
+						<div class="detail detail_4">
+
+							<div class="scrollShow">
+								<p>除了在台核備銷售2檔多元資產境外基金，聯博投信更於2014年發行3檔多元資產收益基金，主要投資範圍涵蓋成熟與新興市場，全球、歐洲與亞太區域，抓緊每一潛力市場的投資機會。</p>
+							</div>
+
+							<div class="scrollShow" hasAnimation="4_1">
+								<h1 style="margin-top: 0;">聯博投信持續發展多元的收益投資策略，<br />旗下發行與總代理之多元產品：</h1>
+								<ul class="fundLink">
+									<li>
+										<a target="_blank" href="https://www.abfunds.com.tw/apac/tw/microsites/multi-asset-fund-of-fund/index.html">
+											<p>聯博多元資產收益組合基金<span>(本基金得投資於非投資等級之高風險債券基金且配息來源可能為本金)</span></p>
+											<span class="arrow"></span>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.abfunds.com.tw/APAC/TW/Funds/Instrumentation/Flyer/iag_euro.pdf">
+											<p>聯博歐洲收益成長平衡基金<span>(本基金得投資於非投資等級之高風險債券且配息來源可能為本金)</span></p>
+											<span class="arrow"></span>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.abfunds.com.tw/APAC/TW/Funds/Instrumentation/Flyer/iag_asia.pdf">
+											<p>聯博亞太收益成長平衡基金<span>(本基金得投資於非投資等級之高風險債券且配息來源可能為本金)</span></p>
+											<span class="arrow"></span>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.abfunds.com.tw/APAC/TW/Funds/Global-Conservative.htm?ShareClassId=68290411">
+											<p>聯博成熟市場多元收益基金*<span>(基金之配息來源可能為本金)</span></p>
+											<span class="arrow"></span>
+										</a>
+									</li>
+									<li>
+										<a target="_blank" href="https://www.abfunds.com.tw/APAC/TW/Funds/Emerging-Markets-Multi-Asset.htm?ShareClassId=68107328">
+											<p>聯博新興市場多元收益基金<span>(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</span></p>
+											<span class="arrow"></span>
+										</a>
+									</li>
+									<li class="purple">
+										<a target="_blank" href="https://www.abfunds.com.tw/APAC/TW/microsites/diim.html"><h3>全權委託<sup>^</sup><br />投資帳戶</h3></a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="scrollShow">
+								<div class="note">
+									<p>^本公司目前之全權委託投資帳戶為保險公司委託聯博投信代操所推出的類全委保單產品之連結標的。</p>
+									<p>*聯博-成熟市場多元收益基金 (AllianceBernstein–Developed Markets Multi Asset Income Portfolio ) 於2014年12月11日更名，舊名為聯博–全球保守型基金 (AllianceBernstein–Global Conservative Portfolio)。該基金之投資目標及政策亦同時修訂，詳細內容請參考基金公開說明書及投資人須知。</p>
+								</div>
+							</div>
+
+							<span class="goTop"></span>
+
+							<div class="scrollShow">
+								<div class="footer">
+									<p>聯博投信獨立經營管理。聯博證券投資信託股份有限公司，台北市110信義路五段7號81樓及81樓之1。電話：02-87583888。</p>
+									<p>多元資產收益組合基金為聯博收益傘型基金旗下子基金；歐洲收益成長平衡基金及亞太收益成長平衡基金為聯博收益成長傘型基金旗下兩檔子基金。基金配息率不代表基金報酬率，且過去配息率不代表未來配息率；基金淨值可能因市場因素而上下波動。<b>基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。投資人於申購時應謹慎考量。經理公司將定期監控基金的配息金額與配息率，評估調整之必要，以避免分配過度侵蝕本金。經理公司將建立分配比率之可容忍差額以為適當之控管。境外基金AD/BD/SD級別之配息來自未扣除費用及支出前的總收入、已實現及未實現收益、及歸屬於相關受益憑證級別的本金。配息超過淨收入(總收入扣除費用及支出)可能代表投資者原始投資金額之返還，因此可能造成相關受益憑證級別每單位淨資產價值之減少。配息可能涉及本金之個別基金最近12 個月內配息組成相關資料已揭露於聯博投信網站。基金進行配息前未先扣除應負擔之相關費用。</b><b class="textBlue">投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重。基金高收益債券之投資占顯著比重者，適合『能承受較高風險之非保守型』之投資人。本公司基金或所代理之境外基金經金管會核准或同意生效，惟不表示絕無風險。由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故本基金可能會因利率上升、市場流動性下降、或債券發行機構違約不支付本金、利息或破產而蒙受虧損。聯博收益成長傘型基金最高可投資基金總資產5%於美國144A債券，該債券屬私募性質，較可能發生流動性不足，財務訊息揭露不完整或因價格不透明導致波動性較大之風險。本基金適合能承受較高風險之非保守型投資人，投資人宜斟酌個人風險承擔能力及資金可運用期間之長短後投資。</b>基金經理公司以往之經理績效不保證基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責本基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。有關基金應負擔之費用〈境外基金含分銷費用〉及投資風險等已揭露於基金公開說明書及投資人須知。投資人如欲索取境內外基金公開說明書、基金簡式公開說明書及投資人須知，可至聯博網站www.ABglobal.com.tw或公開資訊觀測站http://mops.twse.com.tw、境外基金資訊觀測站www.fundclear.com.tw查詢，或聯絡您的理財專員，亦可洽聯博投信索取。<b>全權委託投資並非絕無風險，本公司以往之經理績效不保證委託投資資產之最低收益，本公司除盡善良管理人之注意義務外，不負責委託投資資產之盈虧，亦不保證最低之收益，客戶簽約前應詳閱全權委託投資說明書。本文提及之經濟走勢預測不必然代表本基金之績效，本基金投資風險請詳閱基金公開說明書。</b>投資於新興市場國家之風險一般較成熟市場高，也可能因匯率變動、流動性或政治經濟等不確定因素，而導致投資組合淨值波動加劇。依金管會規定，目前直接投資大陸地區證券市場之有價證券以掛牌上市有價證券為限，且投資總金額不得超過本基金淨資產價值之百分之十。另投資人亦須留意中國市場特定政治、外匯、經濟與市場等投資風險。本文反映文件編製日觀點，僅供說明參考之用，資料來自聯博認為可靠之來源。聯博對資料之正確性不為任何陳述或保證，投資人不應僅以本文作為投資決策依據或投資建議。</p>
+									<p>[A|B]是聯博集團之服務標誌, AllianceBernstein®為聯博集團所有且經允許使用之註冊商標。</p>
+									<p><span>© 2016 AllianceBernstein L.P. </span><span>ABITL15-0903-01</span></p>
+								</div><!--End of Footer-->
+							</div>
+						</div>
+					</div>
+				</div><!--End of 內容區塊四-->
+
+			</div><!--End of 中間區塊-->
+
+			<!--右邊區塊-->
+			<div class="column column-right">
+				<div class="section section-top">
+					<div class="display-index hoverFrame">
+						<div nav="3" class="btn btn_3">
+							<div class="title">
+								<span class="icon"><i iconanimate="3"></i></span>
+								<p>研究觀點多元</p>
+							</div>
+							<div class="btnHover">
+								<span class="icon"></span>
+								<p>集合股債團隊<br />強大後援</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section section-middle">
+					<div class="display-index hoverFrame">
+						<div nav="4" class="btn btn_4">
+							<div class="title">
+								<span class="icon"><i iconanimate="4"></i></span>
+								<p>產品選擇多元</p>
+							</div>
+							<div class="btnHover">
+								<span class="icon"></span>
+								<p>提供各種投資<br />需求不同選擇</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section section-bottom">
+					<div class="display-index"></div>
+				</div>
+				<div class="section section-switch">
+					<div class="display-index up"></div>
+					<div class="switch down">
+						<ul>
+							<li class="prev"><span></span></li>
+							<li class="next"><span></span></li>
+						</ul>
+					</div>
+				</div>
+			</div><!--End of 右邊區塊-->
+
+		</div><!--End of 內容-->
+
+		<!--Footer-->
+		<div id="footer">
+			<span class="close"></span>
+			<div class="frame">
+				<div class="textContent">
+					<p>聯博投信獨立經營管理。聯博證券投資信託股份有限公司，台北市110信義路五段7號81樓及81樓之1。電話：02-87583888。</p>
+					<p>多元資產收益組合基金為聯博收益傘型基金旗下子基金；歐洲收益成長平衡基金及亞太收益成長平衡基金為聯博收益成長傘型基金旗下兩檔子基金。基金配息率不代表基金報酬率，且過去配息率不代表未來配息率；基金淨值可能因市場因素而上下波動。<b>基金的配息可能由基金的收益或本金中支付。任何涉及由本金支出的部份，可能導致原始投資金額減損。投資人於申購時應謹慎考量。經理公司將定期監控基金的配息金額與配息率，評估調整之必要，以避免分配過度侵蝕本金。經理公司將建立分配比率之可容忍差額以為適當之控管。境外基金AD/BD/SD級別之配息來自未扣除費用及支出前的總收入、已實現及未實現收益、及歸屬於相關受益憑證級別的本金。配息超過淨收入(總收入扣除費用及支出)可能代表投資者原始投資金額之返還，因此可能造成相關受益憑證級別每單位淨資產價值之減少。配息可能涉及本金之個別基金最近12 個月內配息組成相關資料已揭露於聯博投信網站。基金進行配息前未先扣除應負擔之相關費用。</b><b class="textBlue">投資人投資以高收益債券為訴求之基金不宜占其投資組合過高之比重。基金高收益債券之投資占顯著比重者，適合『能承受較高風險之非保守型』之投資人。本公司基金或所代理之境外基金經金管會核准或同意生效，惟不表示絕無風險。由於高收益債券之信用評等未達投資等級或未經信用評等，且對利率變動的敏感度甚高，故本基金可能會因利率上升、市場流動性下降、或債券發行機構違約不支付本金、利息或破產而蒙受虧損。聯博收益成長傘型基金最高可投資基金總資產5%於美國144A債券，該債券屬私募性質，較可能發生流動性不足，財務訊息揭露不完整或因價格不透明導致波動性較大之風險。本基金適合能承受較高風險之非保守型投資人，投資人宜斟酌個人風險承擔能力及資金可運用期間之長短後投資。</b>基金經理公司以往之經理績效不保證基金之最低投資收益；基金經理公司除盡善良管理人之注意義務外，不負責本基金之盈虧，亦不保證最低之收益，投資人申購前應詳閱基金公開說明書。有關基金應負擔之費用〈境外基金含分銷費用〉及投資風險等已揭露於基金公開說明書及投資人須知。投資人如欲索取境內外基金公開說明書、基金簡式公開說明書及投資人須知，可至聯博網站www.ABglobal.com.tw或公開資訊觀測站http://mops.twse.com.tw、境外基金資訊觀測站www.fundclear.com.tw查詢，或聯絡您的理財專員，亦可洽聯博投信索取。<b>全權委託投資並非絕無風險，本公司以往之經理績效不保證委託投資資產之最低收益，本公司除盡善良管理人之注意義務外，不負責委託投資資產之盈虧，亦不保證最低之收益，客戶簽約前應詳閱全權委託投資說明書。本文提及之經濟走勢預測不必然代表本基金之績效，本基金投資風險請詳閱基金公開說明書。</b>投資於新興市場國家之風險一般較成熟市場高，也可能因匯率變動、流動性或政治經濟等不確定因素，而導致投資組合淨值波動加劇。依金管會規定，目前直接投資大陸地區證券市場之有價證券以掛牌上市有價證券為限，且投資總金額不得超過本基金淨資產價值之百分之十。另投資人亦須留意中國市場特定政治、外匯、經濟與市場等投資風險。本文反映文件編製日觀點，僅供說明參考之用，資料來自聯博認為可靠之來源。聯博對資料之正確性不為任何陳述或保證，投資人不應僅以本文作為投資決策依據或投資建議。</p>
+					<p>[A|B]是聯博集團之服務標誌, AllianceBernstein®為聯博集團所有且經允許使用之註冊商標。</p>
+					<p><span>© 2016 AllianceBernstein L.P. </span><span>ABITL15-0903-01</span></p>
+				</div>
+			</div>
+		</div><!--End of Footer-->
+		<p class="openFooter">風險聲明</p>
+	</div><!--End of 網頁範圍-->
+
+	<script src="Scripts/slide.js"></script><!--畫面滑動-->
+	<script src="Scripts/icon.js"></script><!--按鈕icon動畫-->
+	<script src="Scripts/scrollShow.js"></script><!--滾動顯示-->
+	<script src="Scripts/orientation.js"></script>
+</body>
+</html>
